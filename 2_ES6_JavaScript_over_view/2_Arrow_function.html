@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click Me!</button>
+    <p><strong>this</strong> represents:</p>
+
+    <p id="demo"></p>
+
+    <h1>Arrow Function</h1>
+        <p>The <strong>this</strong> keyword represents the Header object.</p>
+        <button id="btn1">Click Me!1</button>
+        <p><strong>this</strong> represents:</p>
+        <p id="demo1"></p>    
+    <script>
+        // Normal Function
+        // function PositiveNegative(x){  
+        //     if (x > 0){
+        //         document.write(x,'vlaue is positive Number');
+        //     }
+        //     else{
+        //         document.write(x, 'vlaue is Negative number');
+        //     }
+        // }
+
+        // let x = parseInt(prompt('Enter you value'))
+        // PositiveNegative(x)   // function calling
+
+        // Arrow Function
+        PositiveNegativeArrow = () => {
+            let y = parseInt(prompt('Enter you value'))
+            if (y > 0){
+                // document.write(y,'vlaue is positive Number')
+                return  y + "vlaue is positive Number";
+            }
+            else{
+                // document.write(y, 'vlaue is Negative number');
+                return y + "vlaue is Negative number";
+            }
+        }
+        
+     
+        document.write(PositiveNegativeArrow())
+
+
+
+        // Arrow Function with parameter
+        Name = (name) => "Hello" + name;
+        document.write( Name("anil"));
+       
+    </script>
+  
+    <script>
+        class Header {
+          constructor() {
+            this.color = "Red";
+          }
+        
+          changeColor = function() {
+            document.getElementById("demo").innerHTML += this;
+          }
+        }
+        
+        const myheader = new Header();
+        
+        //The window object calls the function:
+        window.addEventListener("load", myheader.changeColor);
+        
+        //A button object calls the function:
+        document.getElementById("btn").addEventListener("click", myheader.changeColor);
+        
+        </script>
+
+                
+        <script>
+            class Header1 {
+                constructor() {
+                    this.color = "Red";
+                }
+                
+            changeColor1 = () => {
+                document.getElementById("demo1").innerHTML += this;
+            }
+            }
+            
+            const myheader1 = new Header1();
+            
+            //The window object calls the function:
+            window.addEventListener("load", myheader1.changeColor1);
+            
+            //A button object calls the function:
+            document.getElementById("btn1").addEventListener("click", myheader1.changeColor1);
+            
+        </script>
+    
+</body>
+</html>
+
+

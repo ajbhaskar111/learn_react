@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>JavaScript</h1>
+    <p id="answer">answer</p>
+    <script>
+        let x  = 15;
+        let y = 'Anil';
+        let list = [20,50,90,50]
+     
+
+        console.log(x , y)
+        console.log(list)
+        console.log(list[3] + list[2])
+      
+        let val1 = prompt('Enter x value')
+        let val2 = prompt('Enter y value')
+       
+           
+            // setTimeout(() => {
+            //     function addition(x,y) {
+            //     this.x = x
+            //     this.y = y
+            //     x = parseInt(x)
+            //     y = parseInt(y)
+            //     document.write(x)
+            //     document.write(y)
+            //     console.log(x + y)
+            //     // let ans = x + y
+            // }
+            // addition(val1,val2)
+            // }, 3000);
+            for (let index = 0; index < list; index++) {
+                const element = array[index];
+                
+            }
+      
+        class Mame {
+            constructor(x,y) {
+                this.x = x
+                this.y = y
+                x = parseInt(x)
+                y = parseInt(y)
+                document.write(x)
+                document.write(y)
+                console.log(x + y)
+                // let ans = x + y
+            }
+        }
+        const m1 = new Mame(val1,val2)
+     
+        class CarDetail{
+            constructor(car_number,model_number,car_details){
+                this.car_number = car_number;
+                this.model_number = model_number;
+                this.car_details = car_details;
+
+             
+
+            }
+            PrintCardetail(car_number,model_number){
+                 document.write(this.car_number);
+            }
+           
+        }
+        car_details = {
+            "color" : 'Red',
+            "hoursepower" : '20HP'
+        }
+        const car1 = new CarDetail(1200,201,car_details);
+        // car1.PrintCardetail
+        console.log(car1.PrintCardetail)
+    </script>
+</body>
+</html>
