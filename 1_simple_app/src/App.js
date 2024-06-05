@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import Navbar from './MyComponents/Navbar';
 
 const sum = 5 + 5
 const list =  (
@@ -15,10 +16,9 @@ function getand(){
     return  <h1>{(x) == 5 ? "same" : "Not Same"}</h1>;
 }
 function App() {
-
-
   return (
      <>
+     <Navbar />
      {/* <section className="container py-5">
       <h1>Hello React</h1>
       <p>The sum = {sum}</p>
