@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import Navbar from './MyComponents/Navbar';
+import UserProfile from './MyComponents/UserProfile';
+
 
 const sum = 5 + 5
 const list =  (
@@ -18,7 +19,7 @@ function getand(){
 function App() {
   return (
      <>
-     <Navbar />
+     
      {/* <section className="container py-5">
       <h1>Hello React</h1>
       <p>The sum = {sum}</p>
@@ -51,6 +52,7 @@ function App() {
       <div className="container">
           <div>{list}</div>
           <p>{getand()}</p>
+          <UserProfile />
       </div>
     </section>
     

@@ -1,22 +1,24 @@
-import React, { Navbar } from 'react'
-
-export default class Navbar extends Navbar {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
-}
-
 import React from 'react'
+
+function Profile() {
+    return (
+      <img
+        src="https://i.imgur.com/MK3eW3As.jpg"
+        alt="Katherine Johnson"
+      />
+    );
+  }
+
 
 export default function Navbar() {
   return (
-    <div>
-      
-    </div>
+    <section >
+            <h1 className='card-title'>Amazing scientists</h1>
+            <Profile />
+             <Profile />
+            <Profile />
+       
+      </section>
   )
 }
 
