@@ -23,9 +23,10 @@ function App() {
   return (
      <>
      
-     <Navbar title="TextUtilize" />
+     <Navbar title={220} links = {["home","About"]}/>
      <Avtar />
-     {/* <UserProfile /> */}
+
+     <UserProfile />
     {/* <section >
       <div className="container">
           <div>{list}</div>

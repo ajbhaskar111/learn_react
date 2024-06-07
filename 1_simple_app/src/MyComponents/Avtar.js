@@ -17,7 +17,17 @@ export default function Avtar(){
         <>
            <h5>{name}'s To Do List</h5>
            <h6>Days name is := {fromateDate(today)}</h6>
-           <img src={avtar}  alt={alt_text}  srcset=""  className="avtar round-circule "/>
+           <img src={avtar}  alt={alt_text}    className="avtar round-circule "/>
+           <ul style={{
+            backgroundColor: 'black',
+            color: 'pink'
+          }}>
+            <li>Improve the videophone</li>
+            <li>Prepare aeronautics lectures</li>
+            <li>Work on the alcohol-fuelled engine</li>
+          </ul>
         </>
     );
 }
+
+
