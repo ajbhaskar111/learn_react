@@ -3,6 +3,8 @@ import './App.css';
 import Navbar from './MyComponents/Navbar';
 import Avtar from './MyComponents/Avtar';
 import UserProfile from './MyComponents/UserProfile';
+import ComponentPure from './MyComponents/ComponentPure';
+import TextForm from './MyComponents/TextForm';
 
 
 
@@ -27,6 +29,10 @@ function App() {
      <Avtar />
 
      <UserProfile />
+
+     {/* <ComponentPure /> */}
+
+     <TextForm title="Fill this Form"/>
     {/* <section >
       <div className="container">
           <div>{list}</div>
