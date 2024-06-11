@@ -5,6 +5,8 @@ import Avtar from './MyComponents/Avtar';
 import UserProfile from './MyComponents/UserProfile';
 import ComponentPure from './MyComponents/ComponentPure';
 import TextForm from './MyComponents/TextForm';
+import Gallery from './MyComponents/Gallery';
+
 
 
 
@@ -25,10 +27,10 @@ function App() {
   return (
      <>
      
-     <Navbar title={220} links = {["home","About"]}/>
-     <Avtar />
+     <Navbar title="Textulit" links = {["home","About"]}/>
+     {/* <Avtar /> */}
 
-     <UserProfile />
+     {/* <UserProfile /> */}
 
      {/* <ComponentPure /> */}
 
@@ -40,7 +42,7 @@ function App() {
         
       </div>
     </section> */}
-    
+    <Gallery />
      </>
   );
 }
